@@ -8,3 +8,4 @@ Gemfile.lock
 wildwebmidi-old.data
 scripts/midiplayer/old
 .old
+/.idea/

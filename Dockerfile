@@ -1,0 +1,20 @@
+FROM ruby:latest
+
+RUN apt-get update && apt-get install -y jekyll
+
+# Setting the working directory
+WORKDIR /workspace
+
+COPY Gemfile /workspace/Gemfile
+
+RUN bundle install
+
+# Copying the required codebase
+COPY . /workspace
+
+RUN wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O /workspace/scripts/verovio-toolkit.js
+
+EXPOSE 4000
+
+# Entry point
+RUN ./serve-local

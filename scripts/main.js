@@ -3989,7 +3989,7 @@ function downloadEditorContentsInHtml() {
 	var output = '<html>\n';
 	output += '<head>\n';
 	output += '<title>My Score</title>\n';
-	output += '<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>\n';
+	output += '<script src="scripts/humdrum-notation-plugin-worker.js"></script>\n';
 	output += '</head>\n';
 	output += '<body>\n';
 	output += '<script>\n';
