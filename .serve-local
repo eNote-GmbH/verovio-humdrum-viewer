@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Description: This version of the local website server will use purely local
-# resources with no external webiste dependencies.  Use this version of the
+# resources with no external website dependencies.  Use this version of the
 # website if you are not connected to the internet.  Files in styles/local and 
 # scripts/local are used rather than css/javascript files from other web addresses.
 #
@@ -26,5 +26,10 @@
 #     http://127.0.0.1:2000
 #
 
-bundle exec jekyll serve --watch --config _config-local.yml
+# enote custom version of verovio toolkit
+# wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O scripts/verovio-toolkit.js
+# official version of verovio toolkit
+wget https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js -O scripts/verovio-toolkit-wasm.js
+
+bundle exec jekyll serve --watch --config _config.yml,_config-local.yml
 

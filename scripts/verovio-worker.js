@@ -23,18 +23,10 @@ self.Module = {
 //
 //////////////////////////////
 
-
-
-	importScripts("https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js");
-	importScripts("https://plugin.humdrum.org/scripts/humdrumValidator.js");
-	importScripts("https://plugin.humdrum.org/scripts/verovio-calls.js");
-
-
-
-// force local:
-//importScripts("/scripts/verovio-toolkit.js");
-//importScripts("/scripts/humdrumValidator.js");
-//importScripts("/scripts/verovio-calls.js");
+// importScripts("https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js");
+importScripts("verovio-toolkit-wasm.js");
+importScripts("humdrumValidator.js");
+importScripts("verovio-calls.js");
 
 
 //////////////////////////////
@@ -86,5 +78,7 @@ addEventListener("message", function(oEvent) {
 // methods = new verovioCalls();
 // methods.vrvToolkit = new verovio.toolkit();
 // postMessage({method: "ready"});
+
+
 
 

@@ -9,3 +9,4 @@ wildwebmidi-old.data
 scripts/midiplayer/old
 .old
 /.idea/
+/scripts/verovio-toolkit-wasm.js
