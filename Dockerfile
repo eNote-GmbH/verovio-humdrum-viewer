@@ -17,4 +17,4 @@ RUN wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O scripts/v
 EXPOSE 4000
 
 # Entry point
-RUN ./serve-local
+CMD ./.serve-local
