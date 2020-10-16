@@ -27,9 +27,10 @@
 #
 
 # enote custom version of verovio toolkit
-# wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O scripts/verovio-toolkit.js
+wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O scripts/verovio-toolkit-enote.js
 # official version of verovio toolkit
 wget https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js -O scripts/verovio-toolkit-wasm.js
+wget https://verovio-script.humdrum.org/scripts/verovio-toolkit.js -O scripts/verovio-toolkit.js
 
 bundle exec jekyll serve --watch --config _config.yml,_config-local.yml
 

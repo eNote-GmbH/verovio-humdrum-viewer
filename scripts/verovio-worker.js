@@ -12,7 +12,8 @@ self.Module = {
 	onRuntimeInitialized: function() {
 			methods = new verovioCalls();
 			methods.vrvToolkit = new verovio.toolkit();
-			console.log(`Verovio (WASM) ${methods.vrvToolkit.getVersion()} loaded`);
+			console.log(`Verovio ${methods.vrvToolkit.getVersion()} loaded: ${methods.vrvToolkit.initialized}`);
+
 			postMessage({method: "ready"});
 		// postMessage(["loaded", false, {}]);
 	}
@@ -24,7 +25,7 @@ self.Module = {
 //////////////////////////////
 
 // importScripts("https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js");
-importScripts("verovio-toolkit-wasm.js");
+importScripts("verovio-toolkit-enote.js");
 importScripts("humdrumValidator.js");
 importScripts("verovio-calls.js");
 

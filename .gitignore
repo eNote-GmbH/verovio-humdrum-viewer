@@ -10,3 +10,4 @@ scripts/midiplayer/old
 .old
 /.idea/
 /scripts/verovio-toolkit-wasm.js
+/scripts/verovio-toolkit-enote.js
