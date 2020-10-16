@@ -12,7 +12,7 @@ RUN bundle install
 # Copying the required codebase
 COPY . /workspace
 
-RUN wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O /workspace/scripts/verovio-toolkit.js
+RUN wget http://verovio-web-viewer.dev.enote.com/verovio-toolkit.js -O scripts/verovio-toolkit-enote.js
 
 EXPOSE 4000
 

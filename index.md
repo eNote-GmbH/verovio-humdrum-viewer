@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /index.html
-splash: tasso.krn
+splash: test-escaped.mei
 ---
 
 <div id="output"></div>

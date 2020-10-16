@@ -1,0 +1,53 @@
+﻿&lt?xml version="1.0" encoding="UTF-8"?&gt
+&lt?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt
+&lt?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt
+&ltmei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0"&gt
+   &ltmeiHead&gt
+      &ltfileDesc&gt
+         &lttitleStmt&gt
+            &lttitle /&gt
+            &ltrespStmt /&gt
+         &lt/titleStmt&gt
+         &ltpubStmt&gt&ltavailability /&gt
+         &lt/pubStmt&gt
+      &lt/fileDesc&gt
+      &ltencodingDesc xml:id="encodingdesc-0000000512473607"&gt
+         &ltappInfo xml:id="appinfo-0000001299698787"&gt
+            &ltapplication xml:id="application-0000001271735681" isodate="2020-08-25T12:57:46" version="3.0.0-dev-6d93ede"&gt
+               &ltname xml:id="name-0000000425225538"&gtVerovio&lt/name&gt
+               &ltp xml:id="p-0000002090850177"&gtTranscoded from MusicXML&lt/p&gt
+            &lt/application&gt
+         &lt/appInfo&gt
+      &lt/encodingDesc&gt
+   &lt/meiHead&gt
+   &ltmusic&gt
+      &ltbody&gt
+         &ltmdiv xml:id="mdiv-0000001898528162"&gt
+            &ltscore xml:id="score-0000001082726083"&gt
+               &ltscoreDef xml:id="scoredef-0000001763645034"&gt
+                  &ltstaffGrp xml:id="staffgrp-0000001429897644"&gt
+                     &ltstaffDef xml:id="staffdef-0000001395099702" n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4"&gt
+                        &ltlabel xml:id="label-0000002118750781"&gtPiano&lt/label&gt
+                        &ltlabelAbbr xml:id="labelAbbr-0000001787132143"&gtPno.&lt/labelAbbr&gt
+                        &ltinstrDef xml:id="instrdef-0000001684503059" midi.channel="0" midi.instrnum="0" midi.volume="78.00%" /&gt
+                     &lt/staffDef&gt
+                  &lt/staffGrp&gt
+               &lt/scoreDef&gt
+               &ltsection xml:id="section-0000000981288799"&gt
+                  &ltpb xml:id="pb-0000000004723211" /&gt
+                  &ltmeasure xml:id="measure-0000000457224876" right="end" n="1"&gt
+                     &ltstaff xml:id="staff-0000001634717636" n="1"&gt
+                        &ltlayer xml:id="layer-0000000330686462" n="1"&gt
+                           &ltnote xml:id="note-0000002034987021" dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="down" /&gt
+                           &ltnote xml:id="note-0000000658052643" dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="down" /&gt
+                           &ltnote xml:id="note-0000001101067228" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down" /&gt
+                           &ltnote xml:id="note-0000000502924526" dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down" /&gt
+                        &lt/layer&gt
+                     &lt/staff&gt
+                  &lt/measure&gt
+               &lt/section&gt
+            &lt/score&gt
+         &lt/mdiv&gt
+      &lt/body&gt
+   &lt/music&gt
+&lt/mei&gt
