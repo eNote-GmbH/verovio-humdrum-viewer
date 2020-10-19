@@ -259,7 +259,7 @@ function displayNotation(page, force, restoreid) {
 	if (!vrvWorker.initialized || (FreezeRendering && !force)) {
 		console.log("Ignoring displayNotation request: not initialized or frozen");
 		return;
-	};
+	}
 	if (COMPILEFILTERAUTOMATIC) {
 		COMPILEFILTERAUTOMATIC = false;
 		compileGlobalFilter();
@@ -1959,10 +1959,10 @@ function replaceEditorContentWithHumdrumFile(text, page) {
 		// this is MusicXML data, so first convert into Humdrum
 		// before displaying in the editor.
 		if (mode == "xml") {
-			options = musicxmlToHumdrumOptions();
+			// options = musicxmlToHumdrumOptions();
 			// Incorrect identification of xml editor mode when loading a
 			// large Sibelius MusicXML file for some reason.
-			// options = musicxmlToMeiOptions();
+			options = musicxmlToMeiOptions();
 		} else {
 			options = musicxmlToHumdrumOptions();
 		}
@@ -1994,8 +1994,8 @@ function replaceEditorContentWithHumdrumFile(text, page) {
 		if ((options.from == "musedata") || (options.from == "musedata-hum")) {
 			vrvWorker.filterData(options, text, "humdrum")
 			.then(showMei);
-		} else if ((options.from == "musicxml") || (options.from == "musicxml-hum")) {
-			vrvWorker.filterData(options, text, "humdrum")
+		} else if ((options.from == "musicxml") || (options.from == "musicxml-hum") || (options.from == "mei")) {
+			vrvWorker.filterData(options, text, "mei")
 			.then(showMei);
 		} else {
 			vrvWorker.filterData(options, text, "humdrum")
@@ -3539,7 +3539,7 @@ function displayScoreTextInEditor(text, page) {
 	if (mode != EditorMode) {
 		EditorMode = mode;
 		setEditorModeAndKeyboard();
-	};
+	}
 
 	// -1 is to unselect added text, and move cursor to start
 	EDITOR.setValue(text, -1);
@@ -3559,7 +3559,8 @@ function displayScoreTextInEditor(text, page) {
 
 function getMode(text) {
 	if (!text) {
-		return "humdrum";
+		// Use xml as default mode
+		return "xml";
 	}
 	if (text.match(/^\s*</)) {
 		return "xml";
@@ -5183,7 +5184,8 @@ function updateEditorMode() {
 	if (!EDITOR) {
 		return;
 	}
-	var xmod = getMode(EDITOR.getValue().substring(0, 2000));
+	var value = EDITOR.getValue().substring(0, 2000)
+	var xmod = getMode(value);
 	if (xmod !== EditorMode) {
 		EditorMode = xmod;
 		setEditorModeAndKeyboard();

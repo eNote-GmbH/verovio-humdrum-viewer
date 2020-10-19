@@ -71,7 +71,7 @@ addEventListener("message", function(oEvent) {
 		resolve(oEvent.data, methods[oEvent.data.method].apply(methods, oEvent.data.args));
 	} catch(err) {
 		reject(oEvent.data, err);
-	};
+	}
 });
 
 

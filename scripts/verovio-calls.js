@@ -71,7 +71,7 @@ function verovioCalls() {
 			case "mei":
 				newdata = this.vrvToolkit.getMEI(0, 1);
 				break;
-		};
+		}
 		return newdata;
 	};
 
@@ -105,11 +105,11 @@ function verovioCalls() {
 			} else {
 console.log("OPTIONS FOR RENDERDATA", cleanopts);
 				svg = this.vrvToolkit.renderData(data, cleanopts);
-			};
+			}
 			this.page = page;
 			this.humdrumOutput = this.vrvToolkit.getHumdrum();
 			return svg;
-		};
+		}
 	};
 
 
