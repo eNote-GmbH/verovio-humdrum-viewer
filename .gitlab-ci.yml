@@ -27,8 +27,8 @@ deploy:
     - apt-get install gettext-base
     - git clone https://$GITHUB_PERSONAL_TOKEN@github.com/eNote-GmbH/helm-charts.git /tmp/helm-charts
     - cd /tmp/helm-charts
-    - rm dev/veverovio-humdrum-viewer/values.yaml
-    - envsubst '${TAG}' < "dev/veverovio-humdrum-viewer/values-template.yaml" > "dev/veverovio-humdrum-viewer/values.yaml"
+    - rm dev/verovio-humdrum-viewer/values.yaml
+    - envsubst '${TAG}' < "dev/verovio-humdrum-viewer/values-template.yaml" > "dev/verovio-humdrum-viewer/values.yaml"
     - git config credential.helper 'cache --timeout=120'
     - git config user.email "ci-cd@enote.com"
     - git config user.name "enotecicd"
