@@ -1947,7 +1947,8 @@ function downloadMultipleFiles(url) {
 //    MusicXML, then convert to Humdrum and display in the editor.
 //
 
-function replaceEditorContentWithHumdrumFile(text, page) {
+function replaceEditorContentWithHumdrumFile(text, page, filename) {
+	SAVEFILENAME = filename
 	vrvWorker.page = 1;
 	page = page || vrvWorker.page;
 	var options;
