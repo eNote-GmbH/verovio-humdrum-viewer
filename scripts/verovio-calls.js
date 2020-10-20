@@ -71,6 +71,9 @@ function verovioCalls() {
 			case "mei":
 				newdata = this.vrvToolkit.getMEI(0, 1);
 				break;
+			case "musicxml":
+				newdata = data
+				break;
 		}
 		return newdata;
 	};

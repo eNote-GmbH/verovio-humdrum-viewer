@@ -1995,7 +1995,10 @@ function replaceEditorContentWithHumdrumFile(text, page, filename) {
 		if ((options.from == "musedata") || (options.from == "musedata-hum")) {
 			vrvWorker.filterData(options, text, "humdrum")
 			.then(showMei);
-		} else if ((options.from == "musicxml") || (options.from == "musicxml-hum") || (options.from == "mei")) {
+		} else if ((options.from == "musicxml") || (options.from == "musicxml-hum")) {
+			vrvWorker.filterData(options, text, "musicxml")
+			.then(showMei);
+		} else if (options.from == "mei") {
 			vrvWorker.filterData(options, text, "mei")
 			.then(showMei);
 		} else {
