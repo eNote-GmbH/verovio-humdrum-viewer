@@ -88,6 +88,7 @@ var HIGHLIGHTQUERY = null;
 var EDITINGID = null;
 var SAVEFILENAME = "data.txt";
 var SPACINGADJUSTMENT = 0.0;
+var AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI = true
 
 // no timeout for slow delivery of verovio
 window.basketSession.timeout = 1000000000;
@@ -1949,6 +1950,9 @@ function downloadMultipleFiles(url) {
 
 function replaceEditorContentWithHumdrumFile(text, page, filename) {
 	SAVEFILENAME = filename
+	if (AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI) {
+		SAVEFILENAME = SAVEFILENAME.replace("musicxml", "mei")
+	}
 	vrvWorker.page = 1;
 	page = page || vrvWorker.page;
 	var options;
@@ -1996,8 +2000,11 @@ function replaceEditorContentWithHumdrumFile(text, page, filename) {
 			vrvWorker.filterData(options, text, "humdrum")
 			.then(showMei);
 		} else if ((options.from == "musicxml") || (options.from == "musicxml-hum")) {
-			vrvWorker.filterData(options, text, "musicxml")
-			.then(showMei);
+			if (AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI) {
+				vrvWorker.filterData(options, text, "mei").then(showMei);
+			} else {
+                vrvWorker.filterData(options, text, "musicxml").then(showMei);
+            }
 		} else if (options.from == "mei") {
 			vrvWorker.filterData(options, text, "mei")
 			.then(showMei);
@@ -6293,7 +6300,7 @@ function copyToClipboard(string) {
 //
 // inSvgImage -- Used to prevent processing clicks in the text
 //      editor for the click event listener used in the SVG image.
-//      Returns true if the node is inside of an SVG image, or 
+//      Returns true if the node is inside of an SVG image, or
 //      false otherwise.
 //
 
@@ -6308,4 +6315,8 @@ function inSvgImage(node) {
 	return false;
 }
 
+
+function toggleAutomaticMusicXmlToMeiConversion() {
+	AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI = !AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI
+}
 

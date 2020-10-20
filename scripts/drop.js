@@ -70,7 +70,7 @@ function handleDrop(event) {
 
 		reader.onload = function (event) {
 			var contents = reader.result;
-			replaceEditorContentWithHumdrumFile(contents, 1, file.name.replace("musicxml", "mei"));
+			replaceEditorContentWithHumdrumFile(contents, 1, file.name);
 		};
 
 		// reader.readAsDataURL(file); // loads MIME64 version of file

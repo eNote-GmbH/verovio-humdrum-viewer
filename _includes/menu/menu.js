@@ -2152,6 +2152,13 @@ MenuInterface.prototype.chooseToolbarMenu = function () {
 }
 
 
+//////////////////////////////
+//
+// MenuInterface::importExport::toggleAutomaticMusicXmlToMeiConversion --
+//
 
+MenuInterface.prototype.toggleAutomaticMusicXmlToMeiConversion = function () {
+	toggleAutomaticMusicXmlToMeiConversion();
+}
 
 
