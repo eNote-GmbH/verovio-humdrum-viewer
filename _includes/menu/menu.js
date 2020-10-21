@@ -2162,3 +2162,12 @@ MenuInterface.prototype.toggleAutomaticMusicXmlToMeiConversion = function () {
 }
 
 
+//////////////////////////////
+//
+// MenuInterface::importExport::exportScoreParts --
+//
+
+MenuInterface.prototype.exportScoreParts = function () {
+	exportScoreParts();
+}
+

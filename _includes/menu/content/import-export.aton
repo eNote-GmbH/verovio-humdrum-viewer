@@ -88,7 +88,7 @@
 @VI:
 @ZH-simplified:
 @ZH-traditional:
-@ACTION:		MENU.exportParts()
+@ACTION:		MENU.exportScoreParts()
 @@END: TEXT
 @@BEGIN: RIGHT_TEXT
 @TYPE:			

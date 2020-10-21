@@ -6320,3 +6320,6 @@ function toggleAutomaticMusicXmlToMeiConversion() {
 	AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI = !AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI
 }
 
+function exportScoreParts() {
+	alert("@Klaus: This needs to be implemented")
+}
