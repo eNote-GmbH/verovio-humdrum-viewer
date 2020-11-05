@@ -486,7 +486,8 @@ function humdrumToSvgOptions() {
 		spacingStaff         : SPACING_STAFF,
 		spacingSystem        : SPACING_SYSTEM,
 		staffLineWidth       : 0.12,
-		outputIndent         : 1
+		outputIndent         : 1,
+		xmlIdSeed            : 2028
 	}
 	if (OriginalClef) {
 		output.appXPathQuery = "./rdg[contains(@label, 'original-clef')]";
