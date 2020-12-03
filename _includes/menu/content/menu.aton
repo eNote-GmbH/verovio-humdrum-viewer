@@ -36,7 +36,7 @@
 @RU:			Файл
 @SK:			Súbor
 @SV:			Fil
-@TA:			கோப்பு
+@TA:			கோப்பு
 @TR:			Dosya
 @UK:			Файл
 @VI:			Tập tin
@@ -167,7 +167,7 @@
 @RU:			Редактировать
 @SK:			Editovať
 @SV:			Redigera
-@TA:			தொகு
+@TA:			தொகு
 @TR:			Düzenlemek
 @UK:			Редагувати
 @VI:			Chỉnh sửa
@@ -223,49 +223,6 @@
 @@END: TEXT
 @@BEGIN: SUBMENU
 {% include menu/content/analysis.aton %}
-@@END: SUBMENU
-@@END: ENTRY
-
-@@BEGIN: ENTRY
-@@BEGIN: TEXT
-@DEFAULT:		Scores
-@AR:			ذخيرة
-@BE:			Рэпертуар
-@CA:			Repertori
-@CS:
-@DE:			Werke
-@DK:			Repertoire
-@EL:			Ρεπερτόριο
-@EN:			Scores
-@ES:			Repertorio
-@ET:			Repertuaar
-@EU:			Errepertorio
-@FI:			Skaala
-@FR:			Répertoire
-@HE:			רפרטואר
-@HI:			प्रदर्शनों की सूची
-@ID:			Perbendaharaan
-@IT:			Repertorio
-@JA:			レパートリー
-@KO:			레퍼토리
-@LT:			Repertuaras
-@LV:			Repertuārs
-@NL:			Repertoire
-@NO:			Repertoaret
-@PL:			Repertuar
-@PT:			Repertório
-@RU:			Репертуар
-@SK:			Repertoár
-@SV:			Repertoar
-@TA:			பலகலை
-@TR:			Repertuar
-@UK:			Репертуар
-@VI:			tiết mục
-@ZH-simplified:		剧目
-@ZH-traditional:	劇目
-@@END: TEXT
-@@BEGIN: SUBMENU
-{% include menu/content/scores.aton %}
 @@END: SUBMENU
 @@END: ENTRY
 
