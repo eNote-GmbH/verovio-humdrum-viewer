@@ -33,5 +33,5 @@ deploy:
     - git config user.email "ci-cd@enote.com"
     - git config user.name "enotecicd"
     - git add .
-    - git commit -m "Update via GitLab"
+    - git commit --allow-empty -m "Update via GitLab"
     - git push -q https://$GITHUB_PERSONAL_TOKEN@github.com/eNote-GmbH/helm-charts.git master
