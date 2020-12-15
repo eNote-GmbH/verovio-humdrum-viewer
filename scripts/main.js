@@ -26,7 +26,7 @@ var SPACING_STAFF = 12;
 var SPACING_SYSTEM = 18;
 var LYRIC_SIZE = 4.5;
 var FONT = "Leipzig";
-var BREAKS = false;   // false = "auto", true = "line"
+var BREAKS = true;   // false = "auto", true = "line"
 var PAGED = false;
 var SEARCHCHORDDIRECTION = "chord -d";  // search top note
 var SEARCHFILTER = "";
