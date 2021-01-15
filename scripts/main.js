@@ -1952,7 +1952,8 @@ function downloadMultipleFiles(url) {
 function replaceEditorContentWithHumdrumFile(text, page, filename) {
 	SAVEFILENAME = filename
 	if (AUTOMATICALLY_CONVERT_MUSICXML_TO_MEI) {
-		SAVEFILENAME = SAVEFILENAME.replace("musicxml", "mei")
+		SAVEFILENAME = SAVEFILENAME.replace("musicxml", "xml")
+		SAVEFILENAME = SAVEFILENAME.replace(".xml", ".mei")
 	}
 	vrvWorker.page = 1;
 	page = page || vrvWorker.page;
