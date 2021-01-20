@@ -11,7 +11,7 @@ enote Verovio Editor is a simplistic score editor based on the Verovio Humdrum V
 
 For running the application locally, make sure that you have the prerequisites installed as described [here](http://doc.verovio.humdrum.org/myvhv/local/). This includes:
 
-- ruby
+- ruby (ideally in a [ruby-env](https://stackoverflow.com/a/36485498/448357))
 - jekyll
 
 To install the required ruby components, run `bundle install`.

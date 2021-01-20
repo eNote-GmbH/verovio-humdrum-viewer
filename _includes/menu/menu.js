@@ -866,7 +866,7 @@ MenuInterface.prototype.openUrl = function (url, target) {
 
 //////////////////////////////
 //
-// MenuInterface::dropdown menu funcionality:
+// MenuInterface::dropdown menu functionality:
 //
 
 $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {

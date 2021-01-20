@@ -57,7 +57,7 @@ var EditorModes = {
 			theme: "ace/theme/humdrum_dark"
 		},
 		ace: {
-			theme: "ace/theme/humdrum_light"
+			theme: "ace/theme/dawn"
 		}
 	},
 	xml: {
@@ -65,7 +65,7 @@ var EditorModes = {
 			theme: "ace/theme/solarized_dark"
 		},
 		ace: {
-			theme: "ace/theme/solarized_light"
+			theme: "ace/theme/dawn"
 		}
 	},
 	musedata: {
@@ -73,12 +73,12 @@ var EditorModes = {
 			theme: "ace/theme/solarized_dark"
 		},
 		ace: {
-			theme: "ace/theme/solarized_light"
+			theme: "ace/theme/dawn"
 		}
 	}
 };
 
-var EditorMode = "humdrum";
+var EditorMode = "xml";
 var KeyboardMode = "ace";
 //var EditorTheme = "ace/theme/solarized_light";
 var EditorLine = -1;

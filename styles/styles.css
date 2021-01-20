@@ -12,7 +12,7 @@ body {
 }
 
 body {
-	background: #fffcf1;
+	background: #ffffff;
 	margin: 0;
 	padding: 0;
 	/* overflow: scroll; */
@@ -273,7 +273,7 @@ div#splitter {
 	position: fixed;
 	top: 65px;
 	left: 400px;
-	background: #fffcf1;
+	background: #ffffff;
 	width: 4px;
 	height: 100%;
 	border-left: 1px solid #ddd8d0;
@@ -306,7 +306,7 @@ div#index {
 	left: 415px;
 	right: 0;
 	bottom: 0;
-	background: #fffcf1;
+	background: #ffffff;
 	z-index: 2;
 }
 
