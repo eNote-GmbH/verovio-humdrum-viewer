@@ -1,11 +1,11 @@
-# enote Verovio Editor
+# Enote Verovio Editor
 
-enote Verovio Editor is a simplistic score editor based on the Verovio Humdrum Viewer. It's different in the following ways:
+Enote Verovio Editor is a simplistic score editor based on the Verovio Humdrum Viewer. It's different in the following ways:
 
 - It does not support Humdrum
 - It uses our custom-built verovio-toolkit.js version
 - It allows to drag-and-drop MusicXML and MEI files into the editor and converts MusicXML automatically to MEI (unless deactivated)
-- It is automatically deployed to http://verovio.dev.enote.com/
+- It is automatically deployed to https://verovio.dev.enote.com
 
 ## Testing and debugging locally
 
