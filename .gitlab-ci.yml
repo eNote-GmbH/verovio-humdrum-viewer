@@ -24,7 +24,7 @@ deploy:
   except:
     - external_pull_requests
   variables:
-    TAG: ${VAR_IMAGE_TAG}
+    TAG: ${CI_COMMIT_SHA}_${CI_JOB_ID}
   script:
     - apt-get update
     - apt-get install gettext-base
