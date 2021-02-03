@@ -4,7 +4,7 @@ stages:
   - deploy
 
 variables:
-  VAR_IMAGE_TAG: ${CI_COMMIT_SHA}_${CI_JOB_ID}
+  VAR_IMAGE_TAG: ${CI_COMMIT_SHA}_${CI_PIPELINE_ID}
 
 build:
   stage: build
@@ -24,7 +24,7 @@ deploy:
   except:
     - external_pull_requests
   variables:
-    TAG: ${CI_COMMIT_SHA}_${CI_JOB_ID}
+    TAG: ${CI_COMMIT_SHA}_${CI_PIPELINE_ID}
   script:
     - apt-get update
     - apt-get install gettext-base
