@@ -24,7 +24,7 @@ deploy:
   except:
     - external_pull_requests
   variables:
-    TAG: $VAR_IMAGE_TAG
+    TAG: ${VAR_IMAGE_TAG}
   script:
     - apt-get update
     - apt-get install gettext-base
