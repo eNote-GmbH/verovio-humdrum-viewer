@@ -11,3 +11,6 @@ scripts/midiplayer/old
 /.idea/
 /scripts/verovio-toolkit-wasm.js
 /scripts/verovio-toolkit-enote.js
+/.bundle/
+/vendor/
+/.jekyll-metadata
