@@ -11,7 +11,7 @@ build:
   needs:
     - project: Verovio/verovio
       job: build-toolkit
-      ref: ci-deployment-verovio-editor
+      ref: enote-stage
       artifacts: true
   image:
     name: gcr.io/kaniko-project/executor:debug
