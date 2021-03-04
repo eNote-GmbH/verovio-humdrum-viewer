@@ -8,6 +8,11 @@ variables:
 
 build:
   stage: build
+  needs:
+    - project: Verovio/verovio
+      job: build-toolkit
+      ref: enote-stage
+      artifacts: true
   image:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
