@@ -9,6 +9,7 @@ host: 0.0.0.0
 # unless you have other Jekyll builds using this same port that might
 # cause conflicts. in that case, use another port such as 2001.
 port: 4000
+incremental: true
 
 
 

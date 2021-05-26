@@ -20,6 +20,23 @@ To start the server, run `./.serve-local`
 
 To debug, you can use an IDE like PyCharm, create a launch configuration for JavaScript Debug, and enter the URL http://0.0.0.0:4000 when starting your browser. Now breakpoints should be hit directly in your IDE.
 
+## Troubleshooting
+When encountering [encoding problems](https://stackoverflow.com/questions/7165108/in-os-x-lion-lang-is-not-set-to-utf-8-how-to-fix-it) with the locale, try
+
+```shell
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+```
+
+before running
+
+```shell
+rbenv install 2.7.2 
+rbenv global 2.7.2 
+rbenv init
+gem install --user-install bundler jekyll 
+```
+
 ## Original README:
 [VHV](http://verovio.humdrum.org) is an online
 [Humdrum](http://www.humdrum.org) file notation editor and renderer that uses
