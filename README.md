@@ -28,14 +28,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
-before running
-
-```shell
-rbenv install 2.7.2 
-rbenv global 2.7.2 
-rbenv init
-gem install --user-install bundler jekyll 
-```
+before starting the server.
 
 ## Original README:
 [VHV](http://verovio.humdrum.org) is an online
